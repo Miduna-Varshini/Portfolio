@@ -2,17 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Miduna Varshini- Portfolio </title>
+    <title>Miduna Varshini - Portfolio </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <!-- Header -->
     <header class="header">
         <h1>Miduna Varshini</h1>
         <p>Web Developer | Web3 Enthusiast | Problem Solver </p>
     </header>
-
     <!-- About -->
     <section class="section">
         <h2>About Me</h2>
@@ -41,25 +39,32 @@
     <section class="section">
         <h2>Projects</h2>
 
-        <div class="job">
+        <div class="project">
             <h3>Multi Disease Diagonstic app </h3>
             <p>Developed a machine-learning-based web application to predi multiple diseases using user health Inputs. Implemented trained models with TensorFlow and built an Interactive, user-friendly Interface using Streamlit for real-time disease prediction.</p>
             <p> <b>Technologies Used:</b> Machine Learning, Tensorflow, Streamlit </p>
         </div>
 
-        <div class="job">
+        <div class="project">
             <h3>Smart Flood Detection System </h3>
             <p>Developed an IoT-based system to monitor water levels in real time and provide early flood warnings using sensor data. Implemented threshold-based alerts to support timely disaster response and flood risk management.</p>
             <p><b>Technologies Used:</b>IoT, Water Level Sensors, Arduino/ESP8266, Embedded C</p>
         </div>
-
-        <div class="job">
+        <div class="project">
             <h3>Brain Tumor Detection using Machine Learning </h3>
             <p>Developed a machine-learning-based application to detect brain tumors from medical images by analyzing MRI scans. Trained and evaluated models to classify tumor presence, enabling accurate and early diagnosis support.</p>
             <p><b>Technologies Used:</b>Machine Learning, Python, CNN, TensorFlow</p>
         </div>
     </section>
-
+ <div class="comment-container">
+    <h2>Comments</h2>
+    <textarea id="commentInput" placeholder="Enter your comments"></textarea>
+    <button onclick="addComment()">Add Comment</button>
+    <p>Recent Comment:</p>
+    <span id="commentText"></span>
+    <p id="message"></p>
+  </div>
+</section>
     <!-- Contact -->
     <section class="section">
         <h2>Contact</h2>
@@ -67,11 +72,10 @@
         <p><strong>Phone:</strong> +91 7358730467 </p>
         <p><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/miduna-varshini-m-ayyappan-b43160328"><a> https://www.linkedin.com/in/miduna-varshini-m-ayyappan </p>
     </section>
-
     <!-- Footer -->
     <footer class="footer">
         <p>© 2026 MidunaVarshini . All rights reserved.</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
